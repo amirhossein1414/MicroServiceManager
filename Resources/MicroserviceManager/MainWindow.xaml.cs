@@ -21,5 +21,15 @@ namespace MicroserviceManager
 
             }
         }
+
+        private void CloseW3ProcessesBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ProcesseView.CloseW3s();
+        }
+
+        private void ClearNugetsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

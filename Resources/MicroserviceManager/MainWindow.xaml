@@ -1,12 +1,26 @@
-﻿<Window x:Class="MicroserviceManager.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MicroserviceManager"
+        xmlns:Views="clr-namespace:MicroserviceManager.Views" x:Class="MicroserviceManager.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*">
+
+            </ColumnDefinition>
+            <ColumnDefinition Width="0.2*">
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Views:ProcesseView Margin="0,0,10,0" Grid.Column="0" x:Name="ProcesseView"/>
+        <Grid Grid.Column="1">
+            <Label x:Name="label" Content="Functions:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95"/>
+            <Button x:Name="CloseW3ProcessesBtn" Content="CloseW3Processes" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="116" Click="CloseW3ProcessesBtn_Click" HorizontalContentAlignment="Left" Padding="5,1"/>
+            <Button x:Name="ClearNugetsBtn" Content="Clear Nugets" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="116" HorizontalContentAlignment="Left" Padding="5,1" Click="ClearNugetsBtn_Click"/>
+        </Grid>
     </Grid>
 </Window>

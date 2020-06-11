@@ -15,7 +15,6 @@ namespace MicroserviceManager
         public List<Process> GetAll()
         {
             var all = Process.GetProcesses()?.ToList();
-            //var names = all.Select(x => new { x.ProcessName, x.Id }).OrderBy(x=>x.ProcessName).ToList();
             return all;
         }
 

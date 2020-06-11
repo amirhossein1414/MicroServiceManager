@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
 namespace MicroserviceManager
 {
@@ -10,26 +9,6 @@ namespace MicroserviceManager
     {
         public MainWindow()
         {
-            try
-            {
-                InitializeComponent();
-                var manager = new ProcessManager();
-                manager.GetAll();
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
-        private void CloseW3ProcessesBtn_Click(object sender, RoutedEventArgs e)
-        {
-            ProcesseView.CloseW3s();
-        }
-
-        private void ClearNugetsBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

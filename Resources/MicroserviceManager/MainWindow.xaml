@@ -15,7 +15,13 @@
             <TabItem Header="{x:Static webtabcontent:WebTabContent.TabHeader}">
                 <webtabcontent:WebTabContent></webtabcontent:WebTabContent>
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="Las Repo">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Las.Dw Repo">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Task Creator">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>

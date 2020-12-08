@@ -41,9 +41,23 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Reactive, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reactive.5.0.0\lib\net472\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -67,6 +81,16 @@
     <Compile Include="Views\ProcesseView.xaml.cs">
       <DependentUpon>ProcesseView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TabContents\NodeJsProxyContent\Models\GlobalStaticNodeJsConfig.cs" />
+    <Compile Include="Views\TabContents\NodeJsProxyContent\Models\NodeProxy.cs" />
+    <Compile Include="Views\TabContents\NodeJsProxyContent\Models\NodeJsConfig.cs" />
+    <Compile Include="Views\TabContents\NodeJsProxyContent\NodeBussiness\NodeJsBusiness.cs" />
+    <Compile Include="Views\TabContents\NodeJsProxyContent\NodeJsProxyContent.xaml.cs">
+      <DependentUpon>NodeJsProxyContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabContents\NodeJsProxyContent\ProxyView\NodeProxyView.xaml.cs">
+      <DependentUpon>NodeProxyView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\TabContents\WebTabContent\WebTabContent.xaml.cs">
       <DependentUpon>WebTabContent.xaml</DependentUpon>
     </Compile>
@@ -83,6 +107,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\ProcesseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TabContents\NodeJsProxyContent\NodeJsProxyContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TabContents\NodeJsProxyContent\ProxyView\NodeProxyView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

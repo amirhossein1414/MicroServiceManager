@@ -101,6 +101,11 @@ namespace MicroserviceManager.Views.TabContents.NodeJsProxyContent
         {
             RestartProxy();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalStaticNodeJsConfig.SaveConfig();
+        }
     }
 
     public enum ProxyState

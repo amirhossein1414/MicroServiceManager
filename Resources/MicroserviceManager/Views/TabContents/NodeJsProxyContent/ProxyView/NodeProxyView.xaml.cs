@@ -31,7 +31,7 @@ namespace MicroserviceManager.Views.TabContents.NodeJsProxyContent.ProxyView
             if (Proxy == null)
             {
                 Proxy = new NodeProxy();
-                GlobalStaticNodeJsConfig.NodeJsConfig.NodeProxyList.Add(Proxy);
+                GlobalStaticNodeJsConfig.AppGlobalConfig.NodeJsConfig.NodeProxyList.Add(Proxy);
             }
 
             InitializeComponent();

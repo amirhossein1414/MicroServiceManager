@@ -81,6 +81,7 @@
     <Compile Include="Views\ProcesseView.xaml.cs">
       <DependentUpon>ProcesseView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TabContents\NodeJsProxyContent\Models\AppGlobalConfig.cs" />
     <Compile Include="Views\TabContents\NodeJsProxyContent\Models\GlobalStaticNodeJsConfig.cs" />
     <Compile Include="Views\TabContents\NodeJsProxyContent\Models\NodeProxy.cs" />
     <Compile Include="Views\TabContents\NodeJsProxyContent\Models\NodeJsConfig.cs" />

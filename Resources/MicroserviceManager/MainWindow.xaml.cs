@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using MicroserviceManager.Views.TabContents.NodeJsProxyContent.Models;
+using System.Windows;
 
 namespace MicroserviceManager
 {
@@ -9,6 +10,7 @@ namespace MicroserviceManager
     {
         public MainWindow()
         {
+            GlobalStaticNodeJsConfig.LoadConfig();
         }
     }
 }

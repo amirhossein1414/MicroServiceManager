@@ -29,7 +29,7 @@
                 
                 <Button  Grid.Row="1" Grid.Column="0" x:Name="add" Content="Add New Rule" Click="add_Click" Margin="3,3,3,3"/>
                 <Button Grid.Row="1" Grid.Column="1" x:Name="delete" Content="Delete Selected Rule" Margin="3,3,3,3" />
-                <Button Grid.Row="1" Grid.Column="2" x:Name="Save" Content="Save All" Margin="3,3,3,3" />
+                <Button Grid.Row="1" Grid.Column="2" x:Name="Save" Content="Save All" Margin="3,3,3,3" Click="Save_Click" />
             </Grid>
 
         </GroupBox>
